@@ -1,0 +1,17 @@
+body {
+    /* background: red; */
+}
+
+/* Custom mygtuko stilius */
+.btn-eimantas {
+    background: pink;
+    color: white;
+    border-color: red;
+    border-radius: 100px;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

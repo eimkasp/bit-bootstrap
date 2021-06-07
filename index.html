@@ -13,29 +13,43 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+
+    <!-- Musu paciu rasomas CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- 
-        Bootstrap Alert component
-        https://getbootstrap.com/docs/5.0/components/alerts/
-    -->
-    <div class="alert alert-primary" role="alert">
-      A simple primary alert—check it out!
-    </div>
+    <!-- Bootstrap container: 
+        https://getbootstrap.com/docs/5.0/layout/containers/ -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">
+                Labas as esu puse nuo col-4
+            </div>
+          </div>
 
-    <!-- 
+          <!-- Bootstrap Alert component
+        https://getbootstrap.com/docs/5.0/components/alerts/ -->
+          <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+          </div>
+        </div>
+
+        <div class="col-6">
+          <!-- 
         Boostrap Button Component: 
-        https://getbootstrap.com/docs/5.0/components/buttons/
-     -->
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+        https://getbootstrap.com/docs/5.0/components/buttons/ -->
+          <button type="button" class="btn btn-eimantas">Primary</button>
+        </div>
 
+        <div class="col-12">
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container -->
     <!-- Javascript Failus Talpiname pries body uzdaryma -->
 
     <!-- Bootstrap Javascript -->
