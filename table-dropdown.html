@@ -12,9 +12,9 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="padding-top: 100px">
     <!-- Navigacija -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
       <div class="container">
         <a class="navbar-brand" href="#">BIT</a>
         <button
@@ -39,21 +39,49 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link disabled"
+                class="nav-link dropdown-toggle"
                 href="#"
                 tabindex="-1"
                 aria-disabled="true"
-                >Disabled</a
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Language
+              </a>
+              <!-- Cia eina dropdown elemento turinys -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Lietuviu</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </li>
+          </ul>
+        </div>
+
+        <div class="dropdown d-none d-lg-block">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select language
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <!-- TODO: Prideti veliaveles -->
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Lietuviu</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END Navigacija -->
-
     <div class="container">
       <div class="row">
         <div class="col-12">
