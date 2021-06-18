@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slick Slider</title>
-</head>
-<body>
+    <!-- Jei nuorodos pradzia src prasideda // , 
+        turetume pakeisti tai i https:// 
+        nes kitaip turesime problemu dirbami lokaliai
+    -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
     <h1>Slick Slider Example</h1>
-</body>
+
+    <div class="your-class">
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+
+    <!-- Jei nuorodos pradzia src prasideda // , 
+        turetume pakeisti tai i https:// 
+        nes kitaip turesime problemu dirbami lokaliai
+    -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".your-class").slick({});
+      });
+    </script>
+  </body>
 </html>
