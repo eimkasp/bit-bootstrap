@@ -1,9 +1,7 @@
 $(document).ready(function () {
     // Priskiriame HTML elementui, slick functionaluma
     $(".bit-slider").slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         dots: true,
-        centerMode: true,
-        centerPadding: '60px',
       });
 });

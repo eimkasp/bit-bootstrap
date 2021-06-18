@@ -34,53 +34,104 @@
       <div class="row">
         <div class="col-6">
           <h1>Slick Slider Example</h1>
-          <!-- Sitas elementas yra kvieciams jquery dalyje .slick() functijos iskvietime -->
-          <div class="bit-slider">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1519672895461-8c424e7a932b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1778&q=80"
-                alt="slide image"
-              />
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1446717157973-03f219469f59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                alt="slide image"
-              />
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1533055640609-24b498dfd74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
-                alt="slide image"
-              />
-            </div>
+        </div>
+      </div>
 
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1533055640609-24b498dfd74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
-                alt="slide image"
-              />
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <!-- Button turi tureti ID , data-bs-toggle ir data-bs-target
+                data-bs-target rodo i diva, kuris bus rodomas, kai pasirinksime sita elementa
+                -->
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Home
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Profile
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact"
+                type="button"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- Ieskomas elementas su tab-pane klase ir id #home -->
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              Rodome slider'i su 1 nuotrauka
+              <!-- Sitas elementas yra kvieciams jquery dalyje .slick() functijos iskvietime -->
+              <div class="bit-slider">
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1519672895461-8c424e7a932b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1778&q=80"
+                    alt="slide image"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1446717157973-03f219469f59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                    alt="slide image"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1533055640609-24b498dfd74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+                    alt="slide image"
+                  />
+                </div>
+              </div>
             </div>
-
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1533055640609-24b498dfd74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
-                alt="slide image"
-              />
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              Rodome slider'i su 2 nuotrauka
             </div>
-
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1533055640609-24b498dfd74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
-                alt="slide image"
-              />
-            </div>
-
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1533055640609-24b498dfd74c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
-                alt="slide image"
-              />
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              Rodome slider'i su 3 nuotrauka
             </div>
           </div>
         </div>

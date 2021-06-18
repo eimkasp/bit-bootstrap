@@ -1,21 +1,30 @@
 body {
-    /* background: red; */
+  /* background: red; */
 }
 
 /* Custom mygtuko stilius */
 .btn-eimantas {
-    background: pink;
-    color: white;
-    border-color: red;
-    border-radius: 100px;
+  background: pink;
+  color: white;
+  border-color: red;
+  border-radius: 100px;
 }
 
 .contact-line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.bit-slider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bit-slider img {
+  max-height: 500px;
+  margin: 0 auto;
+}
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
